@@ -1,22 +1,22 @@
 "use strict";
 
-/*let number = 5;
-const  leftBorderWidth = 1;
+const numberOfFilms = prompt("Сколько фильмов ты смотрел?", "");
 
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 
-number = 10;
-console.log(number);
+};
 
-//alert('Hello');
+const a = prompt('Один из просмотренных последних фильмов?', ''),
+      b = prompt('Как вы оцените фильм?', ''),
+      c = prompt('Один из просмотренных последних фильмов?', ''),
+      d = prompt('Как вы оцените фильм?', '');
 
-const result = confirm("Are you here?");
-console.log = (result);*/
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-const answers = [];
-
-answers[0] = prompt('What is your name?', '');
-answers[1] = prompt('What is your name?', '');
-answers[2] = prompt('What is your name?', '');
-
-document.write(answers);
-
+console.log(personalMovieDB);
