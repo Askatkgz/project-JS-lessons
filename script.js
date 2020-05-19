@@ -276,7 +276,7 @@ console.log(parseFloat(test));*/
 /* PRACTICE */
 
 
-let numberOfFilms;
+/*let numberOfFilms;
 
 function start() {
     numberOfFilms = +prompt("Сколько фильмов ты смотрел?", "");
@@ -350,7 +350,7 @@ function writeYourGenres() {
     const genre = prompt(`Ваш любимый жанр под номером ${i}`);
     personalMovieDB.genres[i - 1] = genre;
 
-    /* OR */
+     OR
 
     function writeYourGenres() {
     for(let i = 1; i <= 3; i++);
@@ -359,10 +359,21 @@ function writeYourGenres() {
 
 }
 
-writeYourGenres();
+writeYourGenres();*/
 
 
+/* Call Back Functions =================*/
 
+function learnJS(lang, callback) {
+    console.log(`I learn: ${lang}`);
+    callback();
+}
+
+function done(){
+    console.log('I go home');
+}
+
+learnJS('Javascript', done);
 
 
 
