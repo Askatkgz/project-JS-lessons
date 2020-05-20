@@ -449,7 +449,7 @@ const Smaiylov = {
 console.log(Object.keys(Smaiylov));
 */
 
-const options = {
+/*const options = {
     name: 'test',
     width: 1024,
     height: 1024,
@@ -465,7 +465,202 @@ const options = {
 options.makeTest();
 
 const {border, bc} = options.colors;
-console.log(bc);
+console.log(bc);*/
+
+/* Массивы и псевдомассивы **********/
+
+/*const arr = [1, 2, 3, 4, 6, ];
+
+arr.pop();
+console.log(arr);*/
+
+/*const arr = [1, 22, 31, 4, 16,];*/
+
+/*arr.push(10);
+console.log(arr);*/
+
+/*for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}*/
+
+/*for (let value of arr) {
+    console.log(value);
+}*/
+
+/*
+arr.forEach(function(item, i, arr) {
+    console.log(`${i}: ${item} внутри массива ${arr}`);
+});
+*/
+
+/*const str = prompt("", "");
+const products = str.split(", ");
+
+console.log(products);*/
+
+/*const str = prompt("", "");
+const products = str.split(", ")
+products.sort();
+
+console.log(products.join('; '));*/
+
+/*arr.sort(someNum);
+console.log(arr);
+
+function someNum(a, b) {
+    return (a - b);
+}*/
+
+
+/*
+Передача по ссылке или по значению, Spread
+оператор (ES6-ES9)
+=======================*/
+/*
+let a = 5,
+    b = a;
+
+    b = b + 5;
+
+console.log(b);
+console.log(a);*/
+
+/*
+const obj = {
+    a: 5,
+    b: 1
+};
+*/
+
+/*const copy = obj; //Ссылка
+
+copy.a = 10;
+
+console.log(copy);
+console.log(obj);*/
+
+/*function copy(mainObj) {
+    let objCopy = {};
+
+    let key;
+    for (key in mainObj) {
+        objCopy [key] = mainObj [key];
+    }
+
+    return objCopy;
+}
+
+const numbers = {
+    a: 5,
+    b: 3,
+    c: {
+        x: 6,
+        y: 8
+    }
+};
+
+const newNumbers = copy(numbers);
+
+newNumbers.a = 10;*/
+
+/*console.log(newNumbers);
+console.log(numbers);*/
+/*
+const add = {
+    d: 17,
+    e: 20
+};
+
+console.log(Object.assign(numbers, add));
+
+const clone = Object.assign({}, add);
+
+clone.d = 20;
+
+console.log(clone);
+console.log(add);
+
+const oldArray = [1, 2, 3];
+
+const newArray = oldArray.slice();
+
+newArray[3] = 'adasfafdaq';
+
+console.log(newArray);
+console.log(oldArray);*/
+
+
+/*
+const video = ['youtube', 'vimeo', 'rutube'],
+      blogs = ['pinterest', 'yahoo', 'blogger'],
+      internet = [...video, ...blogs, 'vk', 'facebook'];
+
+console.log(internet);
+
+function log(a, b, c) {
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+
+const num = [2, 4, 7];
+log(...num);
+
+const array = ["a", "b"];
+
+const newArray = [...array];
+
+console.log(newArray);
+
+const q = {
+    one: 1,
+    two: 2
+};
+
+const newObj = {...q};
+
+console.log(newObj);
+*/
+
+
+/* Передача по ссылке или по значению,
+Spread оператор (ES6-ES9) ================*/
+
+
+const soldier = {
+    health: 400,
+    armor: 200,
+    sayHello: function(){
+    "Hello"
+        console.log("Hello")
+}
+};
+
+const john = Object.create(soldier);
+
+/*const john = {
+    health: 100
+};
+
+Object.setPrototypeOf (john, soldier);
+
+console.log(john.armor);*/
+
+john.sayHello();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
