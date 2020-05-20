@@ -364,7 +364,7 @@ writeYourGenres();*/
 
 /* Call Back Functions =================*/
 
-function learnJS(lang, callback) {
+/*function learnJS(lang, callback) {
     console.log(`I learn: ${lang}`);
     callback();
 }
@@ -373,9 +373,99 @@ function done(){
     console.log('I go home');
 }
 
-learnJS('Javascript', done);
+learnJS('Javascript', done);*/
 
 
+/* Объекты, деструктуризация объектов (ES6) =================*/
+
+/*const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bc: 'red'
+    }
+    makeTest: function() {
+    console.log('test');
+}
+};
+
+maketest();
+
+console.log(Object.keys(options).length);*/
+
+/*console.log(options.name);
+
+delete options.name;
+
+console.log(options);*/
+
+/* перебирать объекты можно таким образом*/
+/*
+
+for (let key in options){
+    console.log(`Свойство ${key} имеет значение ${options[key]}`);
+
+}
+*/
+
+
+/*for (let key in options){
+    if(typeof(options [key]) === 'object') {
+    for (let i in options[key]) {
+    console.log(`Свойство ${i} имеет значение ${options[key] [i]}`);
+    }
+} else {
+    console.log(`Свойство ${key} имеет значение ${options[key]}`);
+}
+
+}*/
+
+/*let counter =0;
+for (let key in options){
+    if(typeof(options [key]) === 'object') {
+    for (let i in options[key]) {
+    console.log(`Свойство ${i} имеет значение ${options[key] [i]}`);
+    counter++;
+    }
+} else {
+    console.log(`Свойство ${key} имеет значение ${options[key]}`);
+    counter++;
+}
+
+}
+
+console.log(counter);*/
+
+/*
+const Smaiylov = {
+    father: 'Kerimbek',
+    firstSon: 'Askat',
+    secondSon: 'Nurmat',
+    thirdSon: 'Azamat'
+};
+
+console.log(Object.keys(Smaiylov));
+*/
+
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bc: 'red'
+    },
+    makeTest: function() {
+    console.log('test');
+}
+};
+
+options.makeTest();
+
+const {border, bc} = options.colors;
+console.log(bc);
 
 
 
